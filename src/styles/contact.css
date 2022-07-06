@@ -1,0 +1,132 @@
+.contact-main-container {
+  height: 100vh;
+  overflow: hidden;
+  width: 95%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #dbddbd;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+}
+.contact-main-container .header {
+  font-size: 50px;
+  color: #356075;
+  text-shadow: black;
+}
+
+.center-container {
+  display: flex;
+  max-width: 95%;
+  padding: 0.5em;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-item-container {
+  display: flex;
+  max-width: 95%;
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.contact-item {
+  height: 80px;
+  width: 80px;
+  padding: 0.5em;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #356075;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.contact-item img {
+  width: 60%;
+  height: 60%;
+}
+.item-line {
+  /* background: #bababa; */
+  width: 50px;
+  margin: auto;
+  height: 3px;
+}
+.item-container {
+  display: block;
+}
+.download-button-container {
+  height: fit-content;
+}
+.download-button {
+  background-color: #356075;
+  border-radius: 10px;
+  padding: 1em;
+  color: white;
+  font-size: large;
+  text-transform: uppercase;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.item-container .name {
+  display: none;
+}
+
+.download-button:hover {
+}
+
+.insta {
+  background-color: #c13584;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.github {
+  background-color: black;
+}
+
+.linkedin {
+  background-color: #005dc9;
+}
+
+@media only screen and (max-width: 500px) {
+  .item-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5px;
+  }
+  .center-container {
+    width: 90%;
+  }
+  .contact-item-container {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+  }
+  .item-container .name {
+    display: block;
+    color: #356075;
+    text-decoration: underline;
+  }
+  .contact-item {
+    height: 40px;
+    width: 40px;
+  }
+  .contact-item img {
+    height: 60%;
+    width: 60%;
+  }
+}
