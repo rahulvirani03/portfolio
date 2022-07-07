@@ -6,6 +6,8 @@
   margin: 0 auto;
   flex-direction: column;
   padding: 0.3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .skill-main-container .page-header {

@@ -13,11 +13,21 @@ import chatIn from "../assests/chatapp.png";
 import reactblog from "../assests/reactblog.png";
 import rahulfoods from "../assests/rahul-foods.jpg";
 export const Projects = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
-    <div className="projects-main-container">
-      <p className="page-header">My Work</p>
+    <div id="project-scroll-id" className="projects-main-container">
+      <p id="project-scroll-id" className="page-header">
+        My Work
+      </p>
       <div className="card-container">
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => {
+            openInNewTab("http://startup-skill-assist.web.app/");
+          }}
+        >
           <div className="title-container">
             <img src={skillAssist} alt="skillassist" />
             <p className="project-title">skills assist</p>
@@ -33,7 +43,12 @@ export const Projects = () => {
             <img src={Firebase} alt="" className="svg" />
           </div>
         </div>
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => {
+            openInNewTab("http://websocket-chatapp.netlify.app");
+          }}
+        >
           <div className="title-container">
             <img src={chatIn} alt="skillassist" />
             <p className="project-title">chat.in</p>
@@ -52,7 +67,12 @@ export const Projects = () => {
             <img src={Node} alt="" className="svg" />
           </div>
         </div>
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => {
+            openInNewTab("http://blogsreact.netlify.app/");
+          }}
+        >
           <div className="title-container">
             <img src={reactblog} alt="skillassist" />
             <p className="project-title">react-blog</p>
@@ -71,7 +91,14 @@ export const Projects = () => {
             <img src={Node} alt="" className="svg" />
           </div>
         </div>
-        <div className="card">
+        <div
+          className="card"
+          onClick={() => {
+            openInNewTab(
+              "https://github.com/rahulvirani03/rahul-foods-frontend"
+            );
+          }}
+        >
           <div className="title-container">
             <img src={rahulfoods} alt="skillassist" />
             <p style={{ color: "white" }} className="project-title">

@@ -10,7 +10,7 @@ export const Contact = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="contact-main-container">
+    <div id="contact-scroll-id" className="contact-main-container">
       <p className="header">Get in touch!</p>
 
       <div className="center-container">

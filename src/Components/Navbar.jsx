@@ -1,13 +1,57 @@
 import React from "react";
 import "../styles/navbar.css";
-const Navbar = () => {
+const Navbar = ({ skillRef }) => {
   return (
     <div className="nav-container">
-      <div className="title">Porfolio</div>
+      <div
+        className="title"
+        onClick={() => {
+          document.getElementById("intro-scroll-id").scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "start",
+          });
+        }}
+      >
+        Porfolio
+      </div>
       <div className="link-container">
-        <div className="link">Projects</div>
-        <div className="link">Skills</div>
-        <div className="link">Contact</div>
+        <div
+          onClick={() => {
+            document.getElementById("project-scroll-id").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "start",
+            });
+          }}
+          className="link"
+        >
+          Projects
+        </div>
+        <div
+          onClick={() => {
+            document.getElementById("skill-scroll-id").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "start",
+            });
+          }}
+          className="link"
+        >
+          Skills
+        </div>
+        <div
+          onClick={() => {
+            document.getElementById("contact-scroll-id").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+              inline: "start",
+            });
+          }}
+          className="link"
+        >
+          Contact
+        </div>
       </div>
     </div>
   );

@@ -57,7 +57,7 @@ export const Intro = () => {
     };
   }, [window]);
   return (
-    <motion.div className="intro-main-container">
+    <motion.div id="intro-scroll-id" className="intro-main-container">
       <motion.div
         variants={containerVariant}
         initial="hidden"
@@ -116,10 +116,10 @@ export const Intro = () => {
           stiffness: 50,
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-        nesciunt iure, vitae ipsam repellendus illum sapiente rem, eius
-        aspernatur dolor nostrum aut laboriosam provident id enim velit
-        reiciendis cupiditate. Laudantium.
+        I am a Full Stack Javascript developer specilizing in React and Node. I
+        like to design and develop solutions for real life problems and making
+        regular workflows more efficient and less time consuming. I enjoy
+        learning new technologies. I get things Done.
       </motion.div>
     </motion.div>
   );

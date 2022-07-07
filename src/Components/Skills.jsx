@@ -10,10 +10,9 @@ export const Skills = () => {
     console.log("inside if");
     setCount(1);
   }
-  // let rect = elem.getBoundingClientRect();
-  //console.log(rect);
+
   return (
-    <article ref={ref} className="skill-main-container">
+    <div id="skill-scroll-id" ref={ref} className="skill-main-container">
       <p className="page-header">Skills</p>
       {count === 1 && (
         <div className="skill-center-container">
@@ -53,6 +52,6 @@ export const Skills = () => {
           </div>
         </div>
       )}
-    </article>
+    </div>
   );
 };

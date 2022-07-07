@@ -17,6 +17,7 @@
 .title {
   margin-left: 0.5em;
   color: #356075;
+  cursor: pointer;
   font-size: 20px;
   text-decoration: underline;
 }
@@ -27,6 +28,8 @@
   justify-content: flex-end;
 }
 .link {
+  cursor: pointer;
+
   margin: 0 0.5em;
   color: #356075;
 }
