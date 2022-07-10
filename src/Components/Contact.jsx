@@ -77,7 +77,16 @@ export const Contact = () => {
           </div>
         </div>
         <div className="download-button-container">
-          <button className="download-button">Download Resume</button>
+          <a href="../../Resume-Final.pdf" download>
+            <button
+              className="download-button"
+              // onClick={() => {
+              //   window.open("../../Resume-Final.pdf");
+              // }}
+            >
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
     </div>
