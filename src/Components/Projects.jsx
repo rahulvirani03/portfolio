@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../../card.svg";
 import "../styles/projects.css";
 import ReactIcon from "../icons/react.svg";
 import Firebase from "../icons/firebase.svg";

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import "./App.css";
-import sideImage from "../side.png";
 import Navbar from "./Components/Navbar";
 import { Fragment, useRef } from "react";
 import { Intro } from "./Components/Intro";
