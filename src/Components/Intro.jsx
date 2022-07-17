@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/intro.css";
 import { motion } from "framer-motion";
-import avatar from "../../side-avatar.svg";
+import avatar from "../assests/side-avatar.svg";
 import { useTypewriter } from "react-simple-typewriter";
 
 export const Intro = () => {

@@ -11,6 +11,7 @@ import skillAssist from "../assests/skillassist.png";
 import chatIn from "../assests/chatapp.png";
 import reactblog from "../assests/reactblog.png";
 import rahulfoods from "../assests/rahul-foods.jpg";
+import pdda from "../assests/pdda.png";
 export const Projects = () => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -24,7 +25,7 @@ export const Projects = () => {
         <div
           className="card"
           onClick={() => {
-            openInNewTab("http://startup-skill-assist.web.app/");
+            openInNewTab("http://startup-skill-assist.web.app/landing");
           }}
         >
           <div className="title-container">
@@ -45,7 +46,7 @@ export const Projects = () => {
         <div
           className="card"
           onClick={() => {
-            openInNewTab("http://websocket-chatapp.netlify.app");
+            openInNewTab("http://websocket-chatin.netlify.app");
           }}
         >
           <div className="title-container">
@@ -115,6 +116,29 @@ export const Projects = () => {
             <img src={Mongo} alt="" className="svg" />
             <img src={Express} alt="" className="svg" />
             <img src={Node} alt="" className="svg" />
+          </div>
+        </div>
+        <div
+          className="card"
+          onClick={() => {
+            openInNewTab("http://covi-stat.netlify.app");
+          }}
+        >
+          <div className="title-container">
+            <img src={pdda} alt="skillassist" />
+            <p style={{ color: "white" }} className="project-title">
+              pdda
+            </p>
+          </div>
+          <div className="description-container">
+            <p className="description">
+              A web application which provides statistics regarding covid-19
+              pendemic.
+            </p>
+          </div>
+          <div className="description-footer">
+            <img src={ReactIcon} alt="" className="svg" />
+            <img src={Firebase} alt="" className="svg" />
           </div>
         </div>
       </div>

@@ -15,11 +15,12 @@
 }
 
 .title {
-  margin-left: 0.5em;
+  margin-left: 1.5em;
   color: #356075;
   cursor: pointer;
   font-size: 20px;
-  text-decoration: underline;
+
+  text-transform: uppercase;
 }
 
 .link-container {
@@ -29,7 +30,7 @@
 }
 .link {
   cursor: pointer;
-
+  text-transform: uppercase;
   margin: 0 0.5em;
   color: #356075;
 }

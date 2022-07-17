@@ -1,6 +1,28 @@
 import React from "react";
 import "../styles/navbar.css";
 const Navbar = ({ skillRef }) => {
+  const svgVariants = {
+    visible: {
+      rotate: 0,
+      transition: { duration: 1 },
+    },
+  };
+
+  const pathVariants = {
+    hidden: {
+      opacity: 0,
+      pathLength: 0,
+    },
+    visible: {
+      opacity: 1,
+
+      pathLength: 1,
+      transition: {
+        duration: 2,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <div className="nav-container">
       <div
@@ -13,7 +35,7 @@ const Navbar = ({ skillRef }) => {
           });
         }}
       >
-        Porfolio
+        Portfolio
       </div>
       <div className="link-container">
         <div

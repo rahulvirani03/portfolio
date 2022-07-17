@@ -1,0 +1,82 @@
+.skill-main-container {
+  max-height: max-content;
+  overflow: hidden;
+  width: 95%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0.3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.skill-main-container .page-header {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 20px;
+  color: #356075;
+  text-decoration: underline;
+}
+
+.skill-container {
+  height: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 auto;
+  gap: 10%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  padding: 1em 2em;
+  width: 95%;
+}
+
+.skill-item {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.skill-icon {
+  height: inherit;
+  width: inherit;
+  min-height: 80%;
+  max-height: 80%;
+}
+
+.skill-name {
+  color: black;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  .skill-container {
+    display: flex;
+
+    padding: 10px;
+    height: 100%;
+  }
+  .skill-item {
+    height: inherit;
+    width: 25%;
+    min-height: inherit;
+    margin: 0px;
+    padding: 0px;
+  }
+  .skill-icon {
+    min-height: 70px;
+  }
+  .skill-name {
+    font-size: 15px;
+  }
+}
